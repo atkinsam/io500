@@ -7,7 +7,6 @@ echo It will also attempt to build the benchmarks
 echo It will output OK at the end if builds succeed
 echo
 
-IOR_HASH=06fc08e147600f4e5896a5b9b2bf8f1c4a79121f
 PFIND_HASH=62c3a7e31
 
 INSTALL_DIR=$PWD
@@ -54,7 +53,7 @@ function git_co {
 ###### GET FUNCTIONS
 function get_ior {
   echo "Getting IOR and mdtest"
-  git_co https://github.com/hpc/ior.git ior $IOR_HASH
+  git_co https://github.com/atkinsam/ior.git ior
 }
 
 function get_pfind {
